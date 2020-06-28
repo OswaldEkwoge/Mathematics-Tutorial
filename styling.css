@@ -1,0 +1,123 @@
+#container{
+    width: 1050px;
+    border: 1px solid grey;
+    /* height: 100px; */
+    margin: 0 auto;
+}
+#header{
+    height: 100px;
+    padding: 10px 0px;
+}
+
+/*brand  */
+#brand{
+    float: left; /*making all elements float causes the container to be distorted. To solve this, create a #header element */
+}
+
+/* Access link to h1       */
+h1 a{
+    font-size: 50px;
+    font-weight: 100;
+    color: #861BBF;
+    text-decoration: none; /*remove the underline*/
+    
+}
+
+/* Make searchbox to float on right of container */
+#searchbox{
+    float: right; /*leaving it this way makes the searchbox appear below the container. This is because the brand is not set to float, make brand element float to the left.   */
+    background: linear-gradient(#E4F2B9, #B7E953);
+    width: 400px;
+    height: 50px;
+    padding: 20px 20px 0px 20px;
+    margin-top: 20px;
+}
+
+.text{
+    float: left;
+    width: 200px;
+    padding: 5px;
+    font-size: 15px;
+    color: #E36A0C;
+    /*Place search image logo inside text element */
+    background: white url(Images/search_logo.png) right center no-repeat;
+}
+.submit{
+    float: right;
+    padding: 5px;
+    font-weight: bold;
+    color: white;
+    background: #A751D6;    /*background-color can't be used for a button, just background */
+    font-size: 15px;
+}
+
+.clear{
+    clear: both;
+}
+
+#menu{
+    height: 70px;
+    background: linear-gradient(#F8F594, #D5D533);
+    padding: 7px 0;
+}
+
+ul{
+    list-style: none; /*remove bullets */
+}
+/* Lets access the list items from the menu */
+#menu ul li{
+    float: left;  /*all our elements will now be floating left and in line (horizontal) */
+    padding: 0 30px; /*separate each menu element */
+    
+    /* Add vertical bars to separate menu items */
+    height: 30px;
+    border-right: 1px solid #5d12e7;
+    
+    
+    
+}
+/*Remove the last vertical bar after Contact us */
+#menu ul li:last-child{
+    border-right: none;
+}
+
+/* Access the link items (<a>) */
+#menu ul li a{
+    text-decoration: none; /*remove underline */
+    text-transform: uppercase;
+    font-size: 17px;
+    color: #5d12e7;
+    line-height: 30px;
+    
+    /*Let's add transition effects to our menu link items. linear (speed of transition is same from begining to end) or ease could be used. ease means the speed starts slow then faster then slow. */
+    transition: font-size 0.5s ease;
+    
+    /*Add this property for other browsers: safari, firefox, opera and IE in that order */
+    -webkit-transition: font-size 0.5s ease;
+    -moz-transition: font-size 0.5s ease;
+    -o-transition: font-size 0.5s ease;
+    -ms-transition: font-size 0.5s ease;
+}
+
+/*Now, we are going to make the menu items get bigger and bolder when the mouse is passed over them, using hover */
+
+/*Let's also make our first link item active, that is, bold and stagnant. We add class="active" to index.html and also add a.active. */
+
+#menu ul li a:hover, #menu ul li a.active{
+   font-size: 20px;
+    font-weight: bold;
+    color: #B314DB;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

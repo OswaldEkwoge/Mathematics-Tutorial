@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Maths website</title>
+        
+        <!--set device properties. user-scalable=user can zoom in and zoom out, width=device with, so width can span all through device width -->
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable=yes">
+        
+        <!-- link to our styling.css file -->
+        <link rel="stylesheet" href="styling.css">
+
+    </head>
+    
+    <body>
+        <!--Our website is placed inside some container to create space on both sides of the page. Let's use div. Let's also create a .css file called styling to seperate the css styles -->
+        <div id="container">
+            <div id="header">
+                <div id="brand">
+                    <!-- Remember <a> is for link -->
+                    <h1><a href="#">Maths the Fun Way</a></h1>
+                
+                </div>
+                <div id="searchbox">
+                    <form method="get">
+                        <!--use the get method, place a form and submit button -->
+                        <input type="text" class="text">
+                        <input type="submit" value="Search a topic" class="submit">    
+                    </form>
+                </div>
+                <!--It is good practice to clear the floating elements. So crete a new div called clear -->
+                <div class="clear">
+                
+                </div>     
+            
+            </div>
+            <!-- Create Menu -->
+            <div id="menu">
+                <ul>
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#">Online Tutorials</a></li>
+                        <li><a href="#">Private Tutorials</a></li>
+                        <li><a href="#">Sign up</a></li>
+                        <li><a href="#">Contact us</a></li> 
+                </ul>
+            
+            
+            </div>
+            
+        
+        </div>
+    
+    
+    
+    </body>
+
+
+
+
+
+
+
+
+</html>
