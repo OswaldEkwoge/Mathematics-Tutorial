@@ -1,8 +1,17 @@
+body{
+    font: Arial, Helvetica, sans-serif;
+}
+
+
 #container{
     width: 1050px;
-    border: 1px solid grey;
+    /*get rid of line surrounding container */
+    /*border: 1px solid grey;*/
     /* height: 100px; */
     margin: 0 auto;
+    
+    
+    
 }
 #header{
     height: 100px;
@@ -27,6 +36,11 @@ h1 a{
 #searchbox{
     float: right; /*leaving it this way makes the searchbox appear below the container. This is because the brand is not set to float, make brand element float to the left.   */
     background: linear-gradient(#E4F2B9, #B7E953);
+    /*Let's make sure they work in order browsers: safari, opera, firefox.  */
+    background: -webkit-linear-gradient(#E4F2B9, #B7E953);
+    background: -o-linear-gradient(#E4F2B9, #B7E953);
+    background: -moz-linear-gradient(#E4F2B9, #B7E953);
+    
     width: 400px;
     height: 50px;
     padding: 20px 20px 0px 20px;
@@ -41,6 +55,7 @@ h1 a{
     color: #E36A0C;
     /*Place search image logo inside text element */
     background: white url(Images/search_logo.png) right center no-repeat;
+    border: 1px solid #C8D03E;
 }
 .submit{
     float: right;
@@ -58,6 +73,9 @@ h1 a{
 #menu{
     height: 70px;
     background: linear-gradient(#F8F594, #D5D533);
+    background: -webkit-linear-gradient(#F8F594, #D5D533);
+    background: -o-linear-gradient(#F8F594, #D5D533);
+    background: -moz-linear-gradient(#F8F594, #D5D533);
     padding: 7px 0;
 }
 
@@ -109,8 +127,99 @@ ul{
     color: #B314DB;
 }
 
+#introduction{
+    background: linear-gradient(#E5F2BB, #B7E952);
+    background: -webkit-linear-gradient(#E5F2BB, #B7E952);
+    background: -o-linear-gradient(#E5F2BB, #B7E952);
+    background: -moz-linear-gradient(#E5F2BB, #B7E952);
+    padding: 30px;
+    margin: 16px 0;
+}
+
+#introduction h3{
+    font-size: 45px;
+    color: #316901;
+    font-weight: normal;
+}
+
+#introduction p{
+    font-size: 25px;
+    color: #628F19;
+    text-align: justify;
+}
+
+.sidebar{
+    height: 500px;
+    width: 450px;
+    border: 1px solid #BAF46F;
+    border-radius: 20px;
+    padding: 10px 30px 50px 0;
+    margin-bottom: 25px;
+}
+.sidebar h3{
+    color: #B314DB;
+    font-size: 30px;
+}
+
+.sidebar ul{
+    padding-top: 8px;
+}
 
 
+#leftsidebar ul li{
+    padding: 4px 0 4px 10px;
+    list-style: url(Images/arrow.png);
+}
+
+#rightsidebar ul li{
+    padding-bottom: 17px;
+    padding-top: 17px;
+    padding-left: 70px;
+    /*or simplify the padding as follows:
+    padding: 20px 0 20px 70px;
+    */
+    
+    /* another way to add image. many pictures appear. to avoid that, use no-repeat */
+    background: url(Images/tick.png) no-repeat left center;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #5d12e7;
+    transition: font-size 0.5s ease;
+    -webkit-transition: font-size 0.5s ease;
+    -moz-transition: font-size 0.5s ease;
+    -o-transition: font-size 0.5s ease;
+    -ms-transition: font-size 0.5s ease;
+}
+
+.sidebar ul li a:hover, .sidebar ul li a:active{
+    text-decoration: none;
+    color: #B314DB;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+
+#leftsidebar{
+    float: left;
+}
+#rightsidebar{
+    float: right;
+}
+
+.footer{
+    height: 40px;
+    font-size: 17px;
+    background: linear-gradient(#F6F390, #D5D533);
+    background: -webkit-linear-gradient(#F6F390, #D5D533);
+    background: -o-linear-gradient(#F6F390, #D5D533);
+    background: -moz-linear-gradient(#F6F390, #D5D533);
+    padding: 10px 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
 
 
 
